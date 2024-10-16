@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Övningar</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1, h2 {
+            text-align: center;
+        }
+
+        .container {
+            border: 2px solid black;
+            padding: 10px;
+            margin-bottom: 20px;
+            background-color: #f4f4f4;
+        }
+
+        .flex-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-bottom: 20px;
+            border: 2px solid #ccc;
+            padding: 20px;
+        }
+
+        .flex-item {
+            background-color: lightblue;
+            border: 2px solid darkblue;
+            padding: 10px;
+            text-align: center;
+            margin: 10px;
+            width: 150px;
+            height: 150px;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            background-color: #e0e0e0;
+            margin: 5px 0;
+            padding: 10px;
+            border-left: 5px solid darkblue;
+        }
+
+        a {
+            color: darkblue;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Flexbox styling for specific exercises */
+        .flex-row {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .flex-column {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .flex-wrap {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .flex-wrap-reverse {
+            display: flex;
+            flex-wrap: wrap-reverse;
+        }
+
+        .flex-flow-column-wrap {
+            display: flex;
+            flex-flow: column wrap;
+        }
+
+        .flex-flow-reverse {
+            display: flex;
+            flex-flow: column-reverse wrap-reverse;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Flexbox Övningar</h1>
+
+    <section class="container">
+        <h2>Övning 1: Flexbox Grundläggande Layout</h2>
+        <p>Denna övning visar hur du kan använda <strong>display: flex</strong> för att arrangera element i en rad.</p>
+        <div class="flex-container flex-row">
+            <div class="flex-item">
+                <p>Flex Item 1</p>
+                <img src="https://via.placeholder.com/150" alt="Bild 1">
+            </div>
+            <div class="flex-item">
+                <p>Flex Item 2</p>
+                <img src="https://via.placeholder.com/150" alt="Bild 2">
+            </div>
+            <div class="flex-item">
+                <p>Flex Item 3</p>
+                <img src="https://via.placeholder.com/150" alt="Bild 3">
+            </div>
+        </div>
+    </section>
+
+    <section class="container">
+        <h2>Övning 2: Flex Direction</h2>
+        <p>Använd <strong>flex-direction: column</strong> för att placera element vertikalt.</p>
+        <div class="flex-container flex-column">
+            <div class="flex-item">
+                <p>Vertikal Item 1</p>
+                <img src="https://via.placeholder.com/150" alt="Bild 4">
+            </div>
+            <div class="flex-item">
+                <p>Vertikal Item 2</p>
+                <img src="https://via.placeholder.com/150" alt="Bild 5">
+            </div>
+            <div class="flex-item">
+                <p>Vertikal Item 3</p>
+                <img src="https://via.placeholder.com/150" alt="Bild 6">
+            </div>
+        </div>
+    </section>
+
+    <section class="container">
+        <h2>Övning 3: Flex Wrap</h2>
+        <p>Se hur <strong>flex-wrap</strong> fungerar när elementen inte får plats på en rad. De bryts till nästa rad.</p>
+        <div class="flex-container flex-wrap">
+            <div class="flex-item">
+                <p>Wrap Item 1</p>
+                <img src="https://via.placeholder.com/150" alt="Bild 7">
+            </div>
+            <div class="flex-item">
+                <p>Wrap Item 2</p>
+                <img src="https://via.placeholder.com/150" alt="Bild 8">
+            </div>
+            <div class="flex-item">
+                <p>Wrap Item 3</p>
+                <img src="https://via.placeholder.com/150" alt="Bild 9">
+            </div>
+            <div class="flex-item">
+                <p>Wrap Item 4</p>
+                <img src="https://via.placeholder.com/150" alt="Bild 10">
+            </div>
+            <div class="flex-item">
+                <p>Wrap Item 5</p>
+                <img src="https://via.placeholder.com/150" alt="Bild 11">
+            </div>
+        </div>
+    </section>
+
+    <section class="container">
+        <h2>Övning 4: Wrap Reverse</h2>
+        <p>Använd <strong>wrap-reverse</strong> för att bryta rader i omvänd ordning.</p>
+        <div class="flex-container flex-wrap-reverse">
+            <div class="flex-item">
+                <p>Wrap Reverse 1</p>
+                <img src="https://via.placeholder.com/150" alt="Bild 12">
+            </div>
+            <div class="flex-item">
+                <p>Wrap Reverse 2</p>
+                <img src="https://via.placeholder.com/150" alt="Bild 13">
+            </div>
+            <div class="flex-item">
+                <p>Wrap Reverse 3</p>
+                <img src="https://via.placeholder.com/150" alt="Bild 14">
+            </div>
+            <div class="flex-item">
+                <p>Wrap Reverse 4</p>
+                <img src="https://via.placeholder.com/150" alt="Bild 15">
+            </div>
+        </div>
+    </section>
+
+    <section class="container">
+        <h2>Övning 5: Flex Flow</h2>
+        <p>Här används <strong>flex-flow: column wrap</strong> för att kombinera <code>flex-direction</code> och <code>flex-wrap</code>.</p>
+        <div class="flex-container flex-flow-column-wrap">
+            <div class="flex-item">
+                <p>Flow Item 1</p>
+                <img src="https://via.placeholder.com/150" alt="Bild 16">
+            </div>
+            <div class="flex-item">
+                <p>Flow Item 2</p>
+                <img src="https://via.placeholder.com/150" alt="Bild 17">
+            </div>
+            <div class="flex-item">
+                <p>Flow Item 3</p>
+                <img src="https://via.placeholder.com/150" alt="Bild 18">
+            </div>
+            <div class="flex-item">
+                <p>Flow Item 4</p>
+                <img src="https://via.placeholder.com/150" alt="Bild 19">
+            </div>
+            <div class="flex-item">
+                <p>Flow Item 5</p>
+                <img src="https://via.placeholder.com/150" alt="Bild 20">
+            </div>
+        </div>
+    </section>
+
+    <section class="container">
+        <h2>Övning 6: Flex Flow Reverse</h2>
+        <p>Denna övning använder <strong>flex-flow: column-reverse wrap-reverse</strong> för att visa elementen i omvänd ordning.</p>
+        <div class="flex-container flex-flow-reverse">
+            <div class="flex-item">
+                <p>Reverse Flow 1</p>
+                <img src="https://via.placeholder.com/150" alt="Bild 21">
+            </div>
+            <div class="flex-item">
+                <p>Reverse Flow 2</p>
+                <img src="https://via.placeholder.com/150" alt="Bild 22">
+            </div>
+            <div class="flex-item">
+                <p>Reverse Flow 3</p>
+                <img src="https://via.placeholder.com/150" alt="Bild 23">
+            </div>
+            <div class="flex-item">
+                <p>Reverse Flow 4</p>
+                <img src="https://via.placeholder.com/150" alt="Bild 24">
+            </div>
+        </div>
+    </section>
+
+    <section class="container">
+        <h2>Extra: Listor och Länkar</h2>
+        <p>Använd <code>flex</code> för att skapa en layout med en lista och länkar. Perfekt för menyer eller navigering.</p>
+        <ul class="flex-row">
+            <li><a href="#">Hem</a></li>
+            <li><a href="#">Om Oss</a></li>
+            <li><a href="#">Tjänster</a></li>
+            <li><a href="#">Kontakt</a></li>
+        </ul>
+    </section>
+
+</body>
+</html>
